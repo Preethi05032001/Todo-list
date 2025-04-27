@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(251, 225, 229);
+    background-image: url(./Images/img3.avif);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+div {
+    background: rgb(228, 156, 168);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(242, 120, 120);
+    text-align: center;
+    width: 500px;
+}
+
+h1 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    color: blueviolet;
+}
+
+.textInput {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid red;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.addButton {
+    background-color:blue;
+    color: whitesmoke;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition:background 0.3s;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 10px;
+    width: 400px;
+    display: block; 
+    margin: 0 auto;
+} 
+
+#taskList li {
+    background:#f4f4f4;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#taskList li .completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+#taskList li button {
+    background: #ff4d4d;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: small;
+}
+
+#taskList li button.edit-btn {
+    background:rgba(75, 241, 75, 0.955);
+    margin-left: auto;
+    margin-right:5px;
+    font-size: small;
+}
+
+#taskList li button:hover {
+    opacity: 0.8;
+}
+
+.checkinput{
+    width: 15px;
+    height: 2vh;
+    padding: 10px;
+    margin-right: 8px;
+    cursor: pointer;
+}
